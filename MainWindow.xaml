@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group_4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="275" Width="450">
     <Grid>
-        <TextBox x:Name="textbox_ignition" HorizontalAlignment="Left" Height="23" Margin="524,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to ignite"/>
-        <ComboBox HorizontalAlignment="Left" Margin="179,44,0,0" VerticalAlignment="Top" Width="120">
+        <TextBox x:Name="textbox_ignition" HorizontalAlignment="Left" Height="23" Margin="293,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to ignite"/>
+        <ComboBox HorizontalAlignment="Left" Margin="148,28,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Trial" IsEnabled="False" IsSelected="True"/>
             <ComboBoxItem Content="Trial 1"/>
             <ComboBoxItem Content="Trial 2"/>
@@ -16,12 +16,12 @@
             <ComboBoxItem Content="Trial 4"/>
             <ComboBoxItem Content="Trial 5"/>
         </ComboBox>
-        <TextBox x:Name="time_3cm" HorizontalAlignment="Left" Height="23" Margin="524,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 3cm"/>
-        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="23" Margin="524,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 6cm"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="524,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 9cm"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="524,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 12cm"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="524,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 15cm"/>
-        <ComboBox HorizontalAlignment="Left" Margin="54,44,0,0" VerticalAlignment="Top" Width="120">
+        <TextBox x:Name="time_3cm" HorizontalAlignment="Left" Height="23" Margin="293,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 3cm"/>
+        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="23" Margin="293,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 6cm"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="293,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 9cm"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="293,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 12cm"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="293,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Time to 15cm"/>
+        <ComboBox HorizontalAlignment="Left" Margin="23,28,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Material" IsEnabled="False" IsSelected="True"/>
             <ComboBoxItem Content="Cotton"/>
             <ComboBoxItem Content="Wool"/>
@@ -29,7 +29,7 @@
             <ComboBoxItem Content="Polyester"/>
             <ComboBoxItem Content="Nomex"/>
         </ComboBox>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="524,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Flameout"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="293,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Flameout"/>
 
     </Grid>
 </Window>
