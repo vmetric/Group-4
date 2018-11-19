@@ -1,0 +1,15 @@
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\bin\Debug\Group 4 Project Num2.exe.config
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\bin\Debug\Group 4 Project Num2.exe
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\bin\Debug\Group 4 Project Num2.pdb
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\Group 4 Project Num2.csprojAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\MainWindow.g.cs
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\App.g.cs
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\Group 4 Project Num2_MarkupCompile.cache
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\Group 4 Project Num2_MarkupCompile.lref
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\MainWindow.baml
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\Group 4 Project Num2.g.resources
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\Group_4_Project_Num2.Properties.Resources.resources
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\Group 4 Project Num2.csproj.GenerateResource.cache
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\Group 4 Project Num2.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\Group 4 Project Num2.exe
+C:\Users\Matt\Documents\GitHub\Group-4\Group 4 Project Num2\obj\Debug\Group 4 Project Num2.pdb
