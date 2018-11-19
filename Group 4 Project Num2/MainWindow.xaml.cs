@@ -16,7 +16,8 @@ using System.Windows.Shapes;
 namespace Group_4_Project_Num2
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// A program created to help inform users of the flammability of their clothing.
+    /// When given 
     /// </summary>
     public partial class MainWindow : Window
     {
