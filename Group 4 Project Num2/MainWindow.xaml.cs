@@ -47,8 +47,7 @@ namespace Group_4_Project_Num2
 
         private void ArticleDropDownClosed(object sender, EventArgs e)
         {
-            MessageBox.Show(articleComboBox.SelectionBoxItem.ToString());
-
+            articleOfClothing = articleComboBox.SelectionBoxItem.ToString();
         }
 
         private void MaterialDropDownClosed(object sender, EventArgs e)

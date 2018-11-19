@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group_4_Project_Num2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="175" Width="375">
+        Title="MainWindow" Height="800" Width="800">
     <Grid>
         <ComboBox x:Name="articleComboBox" HorizontalAlignment="Left" Margin="189,13,0,0" VerticalAlignment="Top" Width="120" DropDownClosed="ArticleDropDownClosed">
             <ComboBoxItem Content="Long-sleeve shirt" IsSelected="True"/>
@@ -21,15 +21,27 @@
             <ComboBoxItem Content="Nomex"/>
             <ComboBoxItem Content="Mix"/>
         </ComboBox>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="222,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox_MaterialTwoPercent" HorizontalAlignment="Left" Height="23" Margin="222,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="textbox_MaterialOnePercent" HorizontalAlignment="Left" Height="23" Margin="222,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_MaterialTwoPercent" HorizontalAlignment="Left" Height="23" Margin="222,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
         <Label Content="What is your article of clothing?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label Content="What is it made of?" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_FirstMaterial" Content="What is the first material?" HorizontalAlignment="Left" Margin="330,13,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <Label x:Name="label_SecondMaterial" Content="What is the second material?" HorizontalAlignment="Left" Margin="330,41,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
-        <ComboBox x:Name="comboBox_FirstMaterial" HorizontalAlignment="Left" Margin="527,13,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
-        <ComboBox x:Name="comboBox_SecondMaterial" HorizontalAlignment="Left" Margin="527,44,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
-        <Label Content="What is the percent of (material1)?" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox_FirstMaterial" HorizontalAlignment="Left" Margin="527,13,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden">
+            <ComboBoxItem Content="Wool"/>
+            <ComboBoxItem Content="Cotton"/>
+            <ComboBoxItem Content="Spandex"/>
+            <ComboBoxItem Content="Polyester"/>
+            <ComboBoxItem Content="Nomex"/>
+        </ComboBox>
+        <ComboBox x:Name="comboBox_SecondMaterial" HorizontalAlignment="Left" Margin="527,44,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden">
+            <ComboBoxItem Content="Wool"/>
+            <ComboBoxItem Content="Cotton"/>
+            <ComboBoxItem Content="Spandex"/>
+            <ComboBoxItem Content="Polyester"/>
+            <ComboBoxItem Content="Nomex"/>
+        </ComboBox>
+        <Label x:Name="label_MaterialOnePercent" Content="What is the percent of (material1)?" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_MaterialTwoPercent" Content="What is the percent of (material2)?" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
 
     </Grid>
