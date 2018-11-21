@@ -17,7 +17,8 @@ namespace Group_4_Project_Num2
 {
     /// <summary>
     /// A program created to help inform users of the flammability of their clothing.
-    /// When given 
+    /// When given material and percentage of that material and article of clothing, program will
+    /// estimate the time until ignition and other various burn percents.
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -40,16 +41,15 @@ namespace Group_4_Project_Num2
         string articleOfClothing = "";
         string material1 = "";
         string material2 = "";
-        int material1Percentage = 0;
-        int material2Percentage = 0;
-        double areaOfArticle = 0.0;
-        double timeToIgnite = 0.0;
+        int material1Percentage = -1;
+        int material2Percentage = -1;
+        double areaOfArticle = -1.0;
+        double timeToIgnite = -1.0;
 
         private void ArticleDropDownClosed(object sender, EventArgs e)
         {
             articleOfClothing = articleComboBox.SelectionBoxItem.ToString();
         }
-
         private void MaterialDropDownClosed(object sender, EventArgs e)
         {
             if (materialComboBox.SelectionBoxItem.ToString() == "Mix")
@@ -58,10 +58,16 @@ namespace Group_4_Project_Num2
                 changeVisibility(label_SecondMaterial, true);
                 changeVisibility(comboBox_FirstMaterial, true);
                 changeVisibility(comboBox_SecondMaterial, true);
+                changeVisibility(label_MaterialOnePercent, true);
+                changeVisibility(textBox_MaterialOnePercent, true);
                 changeVisibility(label_MaterialTwoPercent, true);
                 changeVisibility(textBox_MaterialTwoPercent, true);
                 Application.Current.MainWindow.Width = 800;
                 Application.Current.MainWindow.Height = 250;
+            }
+            else if (materialComboBox.SelectionBoxItem.ToString() == null)
+            {
+
             }
             else
             {
@@ -69,8 +75,29 @@ namespace Group_4_Project_Num2
                 changeVisibility(label_SecondMaterial, false);
                 changeVisibility(comboBox_FirstMaterial, false);
                 changeVisibility(comboBox_SecondMaterial, false);
+                changeVisibility(label_MaterialOnePercent, false);
+                changeVisibility(textBox_MaterialOnePercent, false);
                 changeVisibility(label_MaterialTwoPercent, false);
                 changeVisibility(textBox_MaterialTwoPercent, false);
+                material1 = materialComboBox.SelectionBoxItem.ToString();
+                material1Percentage = 100;
+                material2 = "";
+                material2Percentage = 0;
+            }
+            
+        }
+        private void FirstMaterialDropdownClosed(object sender, EventArgs e)
+        {
+            if (comboBox_FirstMaterial.SelectionBoxItem.ToString() != null)
+            {
+                material1 = comboBox_FirstMaterial.SelectionBoxItem.ToString();
+            }
+        }
+        private void SecondMaterialDropdownClosed(object sender, EventArgs e)
+        {
+            if (comboBox_SecondMaterial.SelectionBoxItem.ToString() != null)
+            {
+                material2 = comboBox_SecondMaterial.SelectionBoxItem.ToString();
             }
         }
     }
