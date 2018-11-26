@@ -181,6 +181,7 @@ namespace Group_4_Project_Num2
                 return;
             }
 
+
             if (articleOfClothing == "Long-sleeve shirt")
             {
                 areaOfArticle = 236.0;
@@ -240,7 +241,12 @@ namespace Group_4_Project_Num2
             }
             else if (isMix)
             {
-                double burnSpeed = (15 / (ledger[comboBox_FirstMaterial.SelectedIndex].burnDuration * (Convert.ToDouble(textBox_MaterialOnePercent.Text) / 100))) + (15 / (ledger[comboBox_SecondMaterial.SelectedIndex].burnDuration * (Convert.ToDouble(textBox_MaterialTwoPercent.Text) / 100)));
+                if (material1Percentage + material2Percentage != 100)
+                {
+                    MessageBox.Show("Please enter valid percentages");
+                    return;
+                }
+                double burnSpeed = (15 / (ledger[comboBox_FirstMaterial.SelectedIndex].burnDuration * (material1Percentage / 100))) + (15 / (ledger[comboBox_SecondMaterial.SelectedIndex].burnDuration * (material2Percentage/ 100)));
 
                 userCloth.ignitionTime = Math.Round(ledger[0].timeToIgnite, 2);
                 userCloth.oneFourthBurnt = Math.Round((areaOfArticle * 0.25) / burnSpeed, 2);
