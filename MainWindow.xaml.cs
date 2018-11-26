@@ -258,5 +258,11 @@ namespace Group_4_Project_Num2
             Predictions predictionsWindow = new Predictions();
             predictionsWindow.Show();
         }
+
+        private void button_ViewExperimentalData_Click(object sender, RoutedEventArgs e)
+        {
+            Experimental_Data experimentalDataWindow = new Experimental_Data();
+            experimentalDataWindow.Show();
+        }
     }
 }

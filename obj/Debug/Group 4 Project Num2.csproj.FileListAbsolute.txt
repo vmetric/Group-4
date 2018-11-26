@@ -32,3 +32,5 @@ C:\Users\Matt\Documents\GitHub\Group-4\obj\Debug\Group 4 Project Num2.csproj.Gen
 C:\Users\Matt\Documents\GitHub\Group-4\obj\Debug\Group 4 Project Num2.csproj.CoreCompileInputs.cache
 C:\Users\Matt\Documents\GitHub\Group-4\obj\Debug\Group 4 Project Num2.exe
 C:\Users\Matt\Documents\GitHub\Group-4\obj\Debug\Group 4 Project Num2.pdb
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Debug\Experimental Data.g.cs
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Debug\Experimental Data.baml
