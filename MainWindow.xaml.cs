@@ -76,6 +76,11 @@ namespace Group_4_Project_Num2
         public string material2 = "";
         public int material1Percentage = -1;
         public int material2Percentage = -1;
+        const int wool = 0;
+        const int cotton = 1;
+        const int spandex = 2;
+        const int polyester = 3;
+        const int nomex = 4;
         public double areaOfArticle = -1.0;
         public bool isMix = false;
         public static UserCloth userCloth = new UserCloth();
@@ -104,7 +109,7 @@ namespace Group_4_Project_Num2
                 changeVisibility(textBox_MaterialOnePercent, true);
                 changeVisibility(label_MaterialTwoPercent, true);
                 changeVisibility(textBox_MaterialTwoPercent, true);
-                Application.Current.MainWindow.Width = 800;
+                Application.Current.MainWindow.Width = 700;
                 Application.Current.MainWindow.Height = 250;
                 isMix = true;
             }
@@ -232,9 +237,20 @@ namespace Group_4_Project_Num2
                     userCloth.threeFourthsBurnt = Math.Round((areaOfArticle * 0.75) / burnSpeed, 2);
                     userCloth.completelyBurnt = Math.Round(areaOfArticle / burnSpeed, 2);
                 }
-                Predictions predictionsWindow = new Predictions();
-                predictionsWindow.Show();
             }
+            else if (isMix)
+            {
+                double burnSpeed = (15 / (ledger[comboBox_FirstMaterial.SelectedIndex].burnDuration * (Convert.ToDouble(textBox_MaterialOnePercent.Text) / 100))) + (15 / (ledger[comboBox_SecondMaterial.SelectedIndex].burnDuration * (Convert.ToDouble(textBox_MaterialTwoPercent.Text) / 100)));
+
+                userCloth.ignitionTime = Math.Round(ledger[0].timeToIgnite, 2);
+                userCloth.oneFourthBurnt = Math.Round((areaOfArticle * 0.25) / burnSpeed, 2);
+                userCloth.halfBurnt = Math.Round((areaOfArticle * 0.5) / burnSpeed, 2);
+                userCloth.threeFourthsBurnt = Math.Round((areaOfArticle * 0.75) / burnSpeed, 2);
+                userCloth.completelyBurnt = Math.Round(areaOfArticle / burnSpeed, 2);
+
+            }
+            Predictions predictionsWindow = new Predictions();
+            predictionsWindow.Show();
         }
     }
 }
