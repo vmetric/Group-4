@@ -1,17 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace Group_4_Project_Num2
 {
@@ -85,7 +76,7 @@ namespace Group_4_Project_Num2
         public bool isMix = false;
         public static UserCloth userCloth = new UserCloth();
 
-        List<Record> ledger = new List<Record> {
+        public static List<Record> ledger = new List<Record> {
             new Record("Wool", 16.84, 19.67, 21.12, 22.31, 23.56, 26.26, 33.63, 16.79),
             new Record("Cotton", 1.50, 5.20, 6.76, 7.70, 8.75, 9.57, 15.04, 13.54),
             new Record("Spandex", 0.80, 5.37, 7.27, 9.17, 10.66, 11.67, 17.34, 16.54),

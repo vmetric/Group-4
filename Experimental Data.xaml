@@ -15,6 +15,7 @@
             <ComboBoxItem Content="Nomex"/>
         </ComboBox>
         <Label Content="Select the fabric you'd like to see experimental data for:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Display" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="369" Width="429"/>
 
     </Grid>
 </Window>
