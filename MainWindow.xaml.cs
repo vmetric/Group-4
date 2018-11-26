@@ -100,9 +100,9 @@ namespace Group_4_Project_Num2
                 changeVisibility(textBox_MaterialOnePercent, true);
                 changeVisibility(label_MaterialTwoPercent, true);
                 changeVisibility(textBox_MaterialTwoPercent, true);
-                Application.Current.MainWindow.Width = 700;
-                Application.Current.MainWindow.Height = 250;
                 isMix = true;
+                Application.Current.MainWindow.Width = 650;
+                Application.Current.MainWindow.Height = 175;
             }
             else if (materialComboBox.SelectionBoxItem.ToString() == "")
             {
@@ -123,6 +123,8 @@ namespace Group_4_Project_Num2
                 material2 = "";
                 material2Percentage = 0;
                 isMix = false;
+                Application.Current.MainWindow.Width = 340;
+                Application.Current.MainWindow.Height = 165;
             }
             
         }

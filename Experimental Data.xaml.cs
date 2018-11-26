@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Group_4_Project_Num2
 {
@@ -28,10 +17,11 @@ namespace Group_4_Project_Num2
         {
             if (comboBox_Fabric.SelectionBoxItem.ToString() != "")
             {
+                this.Height = 225;
                 string fabric = comboBox_Fabric.SelectionBoxItem.ToString();
                 if (fabric == "Wool")
                 {
-                    textBlock_Display.Text = $"Averaged experimental data for wool is as follows--\n" +
+                    textBlock_Display.Text = $"Averaged experimental data for wool is as follows--\n\n" +
                         $"Time to fabric ignition: {MainWindow.ledger[0].timeToIgnite} seconds\n" +
                         $"Time to 20% burnt: {MainWindow.ledger[0].timeTo3CM} seconds\n" +
                         $"Time to 40% burnt: {MainWindow.ledger[0].timeTo6CM} seconds\n" +
@@ -79,7 +69,11 @@ namespace Group_4_Project_Num2
                     $"Time to 100% burnt: {MainWindow.ledger[4].timeTo15CM} seconds\n" +
                     $"Time until no flames visible: {MainWindow.ledger[4].flameout} seconds\n";
                 }
+            }
+            else if (comboBox_Fabric.SelectionBoxItem.ToString() == "")
+            {
 
+                this.Height = 75;
             }
         }
     }

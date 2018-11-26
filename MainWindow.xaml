@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group_4_Project_Num2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="675">
+        Title="MainWindow" Height="165" Width="340">
     <Grid>
         <ComboBox x:Name="articleComboBox" HorizontalAlignment="Left" Margin="189,13,0,0" VerticalAlignment="Top" Width="120" DropDownClosed="ArticleDropDownClosed">
             <ComboBoxItem Content="Long-sleeve shirt"/>
@@ -19,30 +19,30 @@
             <ComboBoxItem Content="Nomex"/>
             <ComboBoxItem Content="Mix"/>
         </ComboBox>
-        <TextBox x:Name="textBox_MaterialOnePercent" HorizontalAlignment="Left" Height="23" Margin="222,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox_MaterialTwoPercent" HorizontalAlignment="Left" Height="23" Margin="222,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
+        <TextBox x:Name="textBox_MaterialOnePercent" HorizontalAlignment="Left" Height="23" Margin="513,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="textBox_MaterialTwoPercent" HorizontalAlignment="Left" Height="23" Margin="513,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
         <Label Content="What is your article of clothing?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label Content="What is it made of?" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_FirstMaterial" Content="What is the first material?" HorizontalAlignment="Left" Margin="330,13,0,0" VerticalAlignment="Top" Visibility="Visible"/>
-        <Label x:Name="label_SecondMaterial" Content="What is the second material?" HorizontalAlignment="Left" Margin="330,41,0,0" VerticalAlignment="Top" Visibility="Visible"/>
-        <ComboBox x:Name="comboBox_FirstMaterial" HorizontalAlignment="Left" Margin="527,13,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible" DropDownClosed="FirstMaterialDropdownClosed">
+        <Label x:Name="label_FirstMaterial" Content="What is the first material?" HorizontalAlignment="Left" Margin="345,18,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label x:Name="label_SecondMaterial" Content="What is the second material?" HorizontalAlignment="Left" Margin="345,46,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <ComboBox x:Name="comboBox_FirstMaterial" HorizontalAlignment="Left" Margin="513,21,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden" DropDownClosed="FirstMaterialDropdownClosed">
             <ComboBoxItem Content="Wool"/>
             <ComboBoxItem Content="Cotton"/>
             <ComboBoxItem Content="Spandex"/>
             <ComboBoxItem Content="Polyester"/>
             <ComboBoxItem Content="Nomex"/>
         </ComboBox>
-        <ComboBox x:Name="comboBox_SecondMaterial" HorizontalAlignment="Left" Margin="527,44,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible" DropDownClosed="SecondMaterialDropdownClosed">
+        <ComboBox x:Name="comboBox_SecondMaterial" HorizontalAlignment="Left" Margin="513,49,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden" DropDownClosed="SecondMaterialDropdownClosed">
             <ComboBoxItem Content="Wool"/>
             <ComboBoxItem Content="Cotton"/>
             <ComboBoxItem Content="Spandex"/>
             <ComboBoxItem Content="Polyester"/>
             <ComboBoxItem Content="Nomex"/>
         </ComboBox>
-        <Label x:Name="label_MaterialOnePercent" Content="What is the percent of (material1)?" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_MaterialTwoPercent" Content="What is the percent of (material2)?" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Visibility="Visible"/>
-        <Button x:Name="button_Predict" Content="Predict" HorizontalAlignment="Left" Margin="408,95,0,0" VerticalAlignment="Top" Width="75" Click="button_Predict_Click"/>
-        <Button Content="View Experimental Data" HorizontalAlignment="Left" Margin="408,119,0,0" VerticalAlignment="Top" Click="button_ViewExperimentalData_Click"/>
+        <Label x:Name="label_MaterialOnePercent" Content="What is the percent of the first material?" HorizontalAlignment="Left" Margin="268,84,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label x:Name="label_MaterialTwoPercent" Content="What is the percent of the second material?" HorizontalAlignment="Left" Margin="268,110,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Button x:Name="button_Predict" Content="Predict" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="75" Click="button_Predict_Click"/>
+        <Button Content="View Experimental Data" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Click="button_ViewExperimentalData_Click"/>
 
     </Grid>
 </Window>
