@@ -23,15 +23,6 @@ namespace Group_4_Project_Num2
     /// 
     public class Record
     {
-        //public string material { get; set; }
-        //public double timeToIgnite { get; set; }
-        //public double timeTo3CM { get; set; }
-        //public double timeTo6CM { get; set; }
-        //public double timeTo9CM { get; set; }
-        //public double timeTo12CM { get; set; }
-        //public double timeTo15CM { get; set; }
-        //public double flameout { get; set; }
-        //public double burnDuration { get; set; }
         public string material;
         public double timeToIgnite;
         public double timeTo3CM;
@@ -55,6 +46,14 @@ namespace Group_4_Project_Num2
             this.burnDuration = burnDuration;
         }
     }
+    public class UserCloth
+    {
+        public double ignitionTime = -1;
+        public double oneFourthBurnt = -1;
+        public double halfBurnt = -1;
+        public double threeFourthsBurnt = -1;
+        public double completelyBurnt = -1;
+    }
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -72,16 +71,18 @@ namespace Group_4_Project_Num2
             }
         }
 
-        string articleOfClothing = "";
-        string material1 = "";
-        string material2 = "";
-        int material1Percentage = -1;
-        int material2Percentage = -1;
-        double areaOfArticle = -1.0;
-        double timeToIgnite = -1.0;
+        public string articleOfClothing = "";
+        public string material1 = "";
+        public string material2 = "";
+        public int material1Percentage = -1;
+        public int material2Percentage = -1;
+        public double areaOfArticle = -1.0;
+        public bool isMix = false;
+        UserCloth userCloth = new UserCloth();
+
         List<Record> ledger = new List<Record> {
-            new Record("Cotton", 1.50, 5.20, 6.76, 7.70, 8.75, 9.57, 15.04, 13.54),
             new Record("Wool", 16.84, 19.67, 21.12, 22.31, 23.56, 26.26, 33.63, 16.79),
+            new Record("Cotton", 1.50, 5.20, 6.76, 7.70, 8.75, 9.57, 15.04, 13.54),
             new Record("Spandex", 0.80, 5.37, 7.27, 9.17, 10.66, 11.67, 17.34, 16.54),
             new Record("Polyester", 1.50, 5.20, 6.76, 7.70, 8.75, 9.57, 15.04, 13.54),
             new Record("Nomex", 1.63, 6.29, 4.19, 9.67, 7.09, 8.75, 13.774, 60),
@@ -105,8 +106,9 @@ namespace Group_4_Project_Num2
                 changeVisibility(textBox_MaterialTwoPercent, true);
                 Application.Current.MainWindow.Width = 800;
                 Application.Current.MainWindow.Height = 250;
+                isMix = true;
             }
-            else if (materialComboBox.SelectionBoxItem.ToString() == null)
+            else if (materialComboBox.SelectionBoxItem.ToString() == "")
             {
 
             }
@@ -124,6 +126,7 @@ namespace Group_4_Project_Num2
                 material1Percentage = 100;
                 material2 = "";
                 material2Percentage = 0;
+                isMix = false;
             }
             
         }
@@ -139,6 +142,71 @@ namespace Group_4_Project_Num2
             if (comboBox_SecondMaterial.SelectionBoxItem.ToString() != null)
             {
                 material2 = comboBox_SecondMaterial.SelectionBoxItem.ToString();
+            }
+        }
+
+        private void button_Predict_Click(object sender, RoutedEventArgs e)
+        {
+            if (articleComboBox.SelectionBoxItem.ToString() == "")
+            {
+                MessageBox.Show("Please select an article of clothing");
+                return;
+            }
+            else if (materialComboBox.SelectionBoxItem.ToString() == "Mix")
+            {
+                if (comboBox_FirstMaterial.SelectionBoxItem.ToString() == "" && comboBox_SecondMaterial.SelectionBoxItem.ToString() == "")
+                {
+                    MessageBox.Show("Please select materials");
+                    return;
+                }
+                else if (comboBox_FirstMaterial.SelectionBoxItem.ToString() == "")
+                {
+                    MessageBox.Show("Please select first material");
+                    return;
+                }
+                else if (comboBox_SecondMaterial.SelectionBoxItem.ToString() == "")
+                {
+                    MessageBox.Show("Please select second material");
+                    return;
+                }
+            }
+            else if (materialComboBox.SelectionBoxItem.ToString() == "")
+            {
+                MessageBox.Show("Please select a material");
+                return;
+            }
+
+            if (articleOfClothing == "Long-sleeve shirt")
+            {
+                areaOfArticle = 236;
+            }
+            else if (articleOfClothing == "T-shirt")
+            {
+                areaOfArticle = 201;
+            }
+
+            if (!isMix)
+            {
+                if (material1 == "Wool")
+                {
+                    userCloth.ignitionTime = ledger[0].timeToIgnite;
+                }
+                else if (material1 == "Cotton")
+                {
+                    userCloth.ignitionTime = ledger[1].timeToIgnite;
+                }
+                else if (material1 == "Spandex")
+                {
+                    userCloth.ignitionTime = ledger[2].timeToIgnite;
+                }
+                else if (material1 == "Polyester")
+                {
+                    userCloth.ignitionTime = ledger[3].timeToIgnite;
+                }
+                else if (material1 == "Nomex")
+                {
+                    userCloth.ignitionTime = ledger[4].timeToIgnite;
+                }
             }
         }
     }

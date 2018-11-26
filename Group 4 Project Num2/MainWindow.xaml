@@ -10,8 +10,6 @@
         <ComboBox x:Name="articleComboBox" HorizontalAlignment="Left" Margin="189,13,0,0" VerticalAlignment="Top" Width="120" DropDownClosed="ArticleDropDownClosed">
             <ComboBoxItem Content="Long-sleeve shirt"/>
             <ComboBoxItem Content="T-shirt"/>
-            <ComboBoxItem Content="Full-length pants"/>
-            <ComboBoxItem Content="Shorts"/>
         </ComboBox>
         <ComboBox x:Name="materialComboBox" HorizontalAlignment="Left" Margin="189,44,0,0" VerticalAlignment="Top" Width="120" DropDownClosed="MaterialDropDownClosed">
             <ComboBoxItem Content="Cotton"/>
@@ -43,6 +41,7 @@
         </ComboBox>
         <Label x:Name="label_MaterialOnePercent" Content="What is the percent of (material1)?" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_MaterialTwoPercent" Content="What is the percent of (material2)?" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <Button x:Name="button_Predict" Content="Predict" HorizontalAlignment="Left" Margin="408,95,0,0" VerticalAlignment="Top" Width="75" Click="button_Predict_Click"/>
 
     </Grid>
 </Window>
