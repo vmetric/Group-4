@@ -78,7 +78,7 @@ namespace Group_4_Project_Num2
         public int material2Percentage = -1;
         public double areaOfArticle = -1.0;
         public bool isMix = false;
-        UserCloth userCloth = new UserCloth();
+        public static UserCloth userCloth = new UserCloth();
 
         List<Record> ledger = new List<Record> {
             new Record("Wool", 16.84, 19.67, 21.12, 22.31, 23.56, 26.26, 33.63, 16.79),
@@ -178,11 +178,11 @@ namespace Group_4_Project_Num2
 
             if (articleOfClothing == "Long-sleeve shirt")
             {
-                areaOfArticle = 236;
+                areaOfArticle = 236.0;
             }
             else if (articleOfClothing == "T-shirt")
             {
-                areaOfArticle = 201;
+                areaOfArticle = 201.0;
             }
 
             if (!isMix)
@@ -190,52 +190,50 @@ namespace Group_4_Project_Num2
                 if (material1 == "Wool")
                 {
                     double burnSpeed = 15.0 / ledger[0].burnDuration;
-                    userCloth.ignitionTime = ledger[0].timeToIgnite;
-                    userCloth.oneFourthBurnt = (areaOfArticle * (1/4)) / burnSpeed;
-                    userCloth.halfBurnt = (areaOfArticle * (1/2)) / burnSpeed;
-                    userCloth.threeFourthsBurnt = (areaOfArticle * (3/4)) / burnSpeed;
-                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
+                    userCloth.ignitionTime = Math.Round(ledger[0].timeToIgnite, 2);
+                    userCloth.oneFourthBurnt = Math.Round((areaOfArticle * 0.25) / burnSpeed, 2);
+                    userCloth.halfBurnt = Math.Round((areaOfArticle * 0.5) / burnSpeed, 2);
+                    userCloth.threeFourthsBurnt = Math.Round((areaOfArticle * 0.75) / burnSpeed, 2);
+                    userCloth.completelyBurnt = Math.Round(areaOfArticle / burnSpeed, 2);
                 }
                 else if (material1 == "Cotton")
                 {
-                    userCloth.ignitionTime = ledger[1].timeToIgnite;
                     double burnSpeed = 15.0 / ledger[1].burnDuration;
                     userCloth.ignitionTime = ledger[1].timeToIgnite;
-                    userCloth.oneFourthBurnt = (areaOfArticle * (1 / 4)) / burnSpeed;
-                    userCloth.halfBurnt = (areaOfArticle * (1 / 2)) / burnSpeed;
-                    userCloth.threeFourthsBurnt = (areaOfArticle * (3 / 4)) / burnSpeed;
-                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
+                    userCloth.oneFourthBurnt = Math.Round((areaOfArticle * 0.25) / burnSpeed, 2);
+                    userCloth.halfBurnt = Math.Round((areaOfArticle * 0.5) / burnSpeed, 2);
+                    userCloth.threeFourthsBurnt = Math.Round((areaOfArticle * 0.75) / burnSpeed, 2);
+                    userCloth.completelyBurnt = Math.Round(areaOfArticle / burnSpeed, 2);
                 }
                 else if (material1 == "Spandex")
                 {
-                    userCloth.ignitionTime = ledger[2].timeToIgnite;
                     double burnSpeed = 15.0 / ledger[2].burnDuration;
                     userCloth.ignitionTime = ledger[2].timeToIgnite;
-                    userCloth.oneFourthBurnt = (areaOfArticle * (1 / 4)) / burnSpeed;
-                    userCloth.halfBurnt = (areaOfArticle * (1 / 2)) / burnSpeed;
-                    userCloth.threeFourthsBurnt = (areaOfArticle * (3 / 4)) / burnSpeed;
-                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
+                    userCloth.oneFourthBurnt = Math.Round((areaOfArticle * 0.25) / burnSpeed, 2);
+                    userCloth.halfBurnt = Math.Round((areaOfArticle * 0.5) / burnSpeed, 2);
+                    userCloth.threeFourthsBurnt = Math.Round((areaOfArticle * 0.75) / burnSpeed, 2);
+                    userCloth.completelyBurnt = Math.Round(areaOfArticle / burnSpeed, 2);
                 }
                 else if (material1 == "Polyester")
                 {
-                    userCloth.ignitionTime = ledger[3].timeToIgnite;
                     double burnSpeed = 15.0 / ledger[3].burnDuration;
                     userCloth.ignitionTime = ledger[3].timeToIgnite;
-                    userCloth.oneFourthBurnt = (areaOfArticle * (1 / 4)) / burnSpeed;
-                    userCloth.halfBurnt = (areaOfArticle * (1 / 2)) / burnSpeed;
-                    userCloth.threeFourthsBurnt = (areaOfArticle * (3 / 4)) / burnSpeed;
-                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
+                    userCloth.oneFourthBurnt = Math.Round((areaOfArticle * 0.25) / burnSpeed, 2);
+                    userCloth.halfBurnt = Math.Round((areaOfArticle * 0.5) / burnSpeed, 2);
+                    userCloth.threeFourthsBurnt = Math.Round((areaOfArticle * 0.75) / burnSpeed, 2);
+                    userCloth.completelyBurnt = Math.Round(areaOfArticle / burnSpeed, 2);
                 }
                 else if (material1 == "Nomex")
                 {
-                    userCloth.ignitionTime = ledger[4].timeToIgnite;
                     double burnSpeed = 15.0 / ledger[4].burnDuration;
                     userCloth.ignitionTime = ledger[4].timeToIgnite;
-                    userCloth.oneFourthBurnt = (areaOfArticle * (1 / 4)) / burnSpeed;
-                    userCloth.halfBurnt = (areaOfArticle * (1 / 2)) / burnSpeed;
-                    userCloth.threeFourthsBurnt = (areaOfArticle * (3 / 4)) / burnSpeed;
-                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
+                    userCloth.oneFourthBurnt = Math.Round((areaOfArticle * 0.25) / burnSpeed, 2);
+                    userCloth.halfBurnt = Math.Round((areaOfArticle * 0.5) / burnSpeed, 2);
+                    userCloth.threeFourthsBurnt = Math.Round((areaOfArticle * 0.75) / burnSpeed, 2);
+                    userCloth.completelyBurnt = Math.Round(areaOfArticle / burnSpeed, 2);
                 }
+                Predictions predictionsWindow = new Predictions();
+                predictionsWindow.Show();
             }
         }
     }
