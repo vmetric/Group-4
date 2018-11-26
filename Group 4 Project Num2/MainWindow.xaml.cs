@@ -189,23 +189,52 @@ namespace Group_4_Project_Num2
             {
                 if (material1 == "Wool")
                 {
+                    double burnSpeed = 15.0 / ledger[0].burnDuration;
                     userCloth.ignitionTime = ledger[0].timeToIgnite;
+                    userCloth.oneFourthBurnt = (areaOfArticle * (1/4)) / burnSpeed;
+                    userCloth.halfBurnt = (areaOfArticle * (1/2)) / burnSpeed;
+                    userCloth.threeFourthsBurnt = (areaOfArticle * (3/4)) / burnSpeed;
+                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
                 }
                 else if (material1 == "Cotton")
                 {
                     userCloth.ignitionTime = ledger[1].timeToIgnite;
+                    double burnSpeed = 15.0 / ledger[1].burnDuration;
+                    userCloth.ignitionTime = ledger[1].timeToIgnite;
+                    userCloth.oneFourthBurnt = (areaOfArticle * (1 / 4)) / burnSpeed;
+                    userCloth.halfBurnt = (areaOfArticle * (1 / 2)) / burnSpeed;
+                    userCloth.threeFourthsBurnt = (areaOfArticle * (3 / 4)) / burnSpeed;
+                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
                 }
                 else if (material1 == "Spandex")
                 {
                     userCloth.ignitionTime = ledger[2].timeToIgnite;
+                    double burnSpeed = 15.0 / ledger[2].burnDuration;
+                    userCloth.ignitionTime = ledger[2].timeToIgnite;
+                    userCloth.oneFourthBurnt = (areaOfArticle * (1 / 4)) / burnSpeed;
+                    userCloth.halfBurnt = (areaOfArticle * (1 / 2)) / burnSpeed;
+                    userCloth.threeFourthsBurnt = (areaOfArticle * (3 / 4)) / burnSpeed;
+                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
                 }
                 else if (material1 == "Polyester")
                 {
                     userCloth.ignitionTime = ledger[3].timeToIgnite;
+                    double burnSpeed = 15.0 / ledger[3].burnDuration;
+                    userCloth.ignitionTime = ledger[3].timeToIgnite;
+                    userCloth.oneFourthBurnt = (areaOfArticle * (1 / 4)) / burnSpeed;
+                    userCloth.halfBurnt = (areaOfArticle * (1 / 2)) / burnSpeed;
+                    userCloth.threeFourthsBurnt = (areaOfArticle * (3 / 4)) / burnSpeed;
+                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
                 }
                 else if (material1 == "Nomex")
                 {
                     userCloth.ignitionTime = ledger[4].timeToIgnite;
+                    double burnSpeed = 15.0 / ledger[4].burnDuration;
+                    userCloth.ignitionTime = ledger[4].timeToIgnite;
+                    userCloth.oneFourthBurnt = (areaOfArticle * (1 / 4)) / burnSpeed;
+                    userCloth.halfBurnt = (areaOfArticle * (1 / 2)) / burnSpeed;
+                    userCloth.threeFourthsBurnt = (areaOfArticle * (3 / 4)) / burnSpeed;
+                    userCloth.completelyBurnt = areaOfArticle / burnSpeed;
                 }
             }
         }
