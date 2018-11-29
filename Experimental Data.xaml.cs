@@ -21,7 +21,7 @@ namespace Group_4_Project_Num2
                 string fabric = comboBox_Fabric.SelectionBoxItem.ToString();
                 if (fabric == "Wool")
                 {
-                    textBlock_Display.Text = $"Averaged experimental data for wool is as follows--\n\n" +
+                    textBlock_Display.Text = $"Averaged experimental data for wool is as follows--\n" +
                         $"Time to fabric ignition: {MainWindow.ledger[0].timeToIgnite} seconds\n" +
                         $"Time to 20% burnt: {MainWindow.ledger[0].timeTo3CM} seconds\n" +
                         $"Time to 40% burnt: {MainWindow.ledger[0].timeTo6CM} seconds\n" +

@@ -1,0 +1,19 @@
+C:\Users\Matt\Documents\GitHub\Group-4\bin\Release\Group 4 Project Num2.exe.config
+C:\Users\Matt\Documents\GitHub\Group-4\bin\Release\Group 4 Project Num2.exe
+C:\Users\Matt\Documents\GitHub\Group-4\bin\Release\Group 4 Project Num2.pdb
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Experimental Data.g.cs
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\MainWindow.g.cs
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Predictions.g.cs
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\App.g.cs
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Group 4 Project Num2_MarkupCompile.cache
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Group 4 Project Num2_MarkupCompile.lref
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Experimental Data.baml
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\MainWindow.baml
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Predictions.baml
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Group 4 Project Num2.g.resources
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Group_4_Project_Num2.Properties.Resources.resources
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Group 4 Project Num2.csproj.GenerateResource.cache
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Group 4 Project Num2.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Group 4 Project Num2.exe
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Group 4 Project Num2.pdb
+C:\Users\Matt\Documents\GitHub\Group-4\obj\Release\Group 4 Project Num2.csprojAssemblyReference.cache

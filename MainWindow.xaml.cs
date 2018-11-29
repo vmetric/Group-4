@@ -80,8 +80,8 @@ namespace Group_4_Project_Num2
             new Record("Wool", 16.84, 19.67, 21.12, 22.31, 23.56, 26.26, 33.63, 16.79),
             new Record("Cotton", 1.50, 5.20, 6.76, 7.70, 8.75, 9.57, 15.04, 13.54),
             new Record("Spandex", 0.80, 5.37, 7.27, 9.17, 10.66, 11.67, 17.34, 16.54),
-            new Record("Polyester", 1.50, 5.20, 6.76, 7.70, 8.75, 9.57, 15.04, 13.54),
-            new Record("Nomex", 1.63, 6.29, 4.19, 9.67, 7.09, 8.75, 13.774, 60),
+            new Record("Polyester", 1.632, 6.294, 4.1925,  9.6725, 7.086666667, 8.75, 13.774, 60),
+            new Record("Nomex", 2.22, 6.86, 9.29, 10.60, 12.06, 12.55, 23.13, 20.91),
         };
 
         private void ArticleDropDownClosed(object sender, EventArgs e)
@@ -152,6 +152,8 @@ namespace Group_4_Project_Num2
             }
             else if (materialComboBox.SelectionBoxItem.ToString() == "Mix")
             {
+                material1Percentage = Convert.ToInt32(textBox_MaterialOnePercent.Text);
+                material2Percentage = Convert.ToInt32(textBox_MaterialTwoPercent.Text);
                 if (comboBox_FirstMaterial.SelectionBoxItem.ToString() == "" && comboBox_SecondMaterial.SelectionBoxItem.ToString() == "")
                 {
                     MessageBox.Show("Please select materials");
@@ -239,7 +241,7 @@ namespace Group_4_Project_Num2
                     MessageBox.Show("Please enter valid percentages");
                     return;
                 }
-                double burnSpeed = (15 / (ledger[comboBox_FirstMaterial.SelectedIndex].burnDuration * (material1Percentage / 100))) + (15 / (ledger[comboBox_SecondMaterial.SelectedIndex].burnDuration * (material2Percentage/ 100)));
+                double burnSpeed = (15.0 / ((double)ledger[comboBox_FirstMaterial.SelectedIndex].burnDuration * ((double)material1Percentage / 100.0))) + (15.0 / (double)(ledger[comboBox_SecondMaterial.SelectedIndex].burnDuration * (double)(material2Percentage/ 100.0)));
 
                 userCloth.ignitionTime = Math.Round(ledger[0].timeToIgnite, 2);
                 userCloth.oneFourthBurnt = Math.Round((areaOfArticle * 0.25) / burnSpeed, 2);
